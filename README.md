@@ -11,7 +11,7 @@
 | Nome                          | RA        | GitHub                                       |
 |-------------------------------|-----------|----------------------------------------------|
 | Gabriel Augusto Morisaki Rita | 2268191   | [gasakiri](https://github.com/gasakiri)      |
-| Mateus Bernardi Alves      |    | [Mateus-Bernardi](https://github.com/Mateus-Bernardi)        |
+| Mateus Bernardi Alves      | 2144514   | [Mateus-Bernardi](https://github.com/Mateus-Bernardi)        |
 | Pedro Henrique Silva Oliveira       |    | [DevPEDROCN](https://github.com/DevPEDROCN) |
 
 ---
