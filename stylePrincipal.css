@@ -115,6 +115,24 @@ p {
   border: 2px solid transparent;
 }
 
+.nav-button-size {
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.secondary-btn.nav-button-size {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.primary-btn.nav-button-size:hover,
+.secondary-btn.nav-button-size:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.25);
+}
+
 /* Header Styles */
 header {
   background-color: rgba(255, 255, 255, 0.95);
@@ -148,7 +166,12 @@ header .container {
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-cadastro-button-item {
+  margin-left: -15px;
 }
 
 nav ul li a {
@@ -158,7 +181,11 @@ nav ul li a {
   padding: 8px 0px;
 }
 
-nav ul li a::after {
+nav ul li a.btn::after {
+  display: none;
+}
+
+nav ul li a:not(.btn)::after {
   content: "";
   position: absolute;
   display: block;
@@ -174,12 +201,20 @@ nav ul li a::after {
   transition: var(--transition);
 }
 
-nav ul li a:hover::after {
+nav ul li a:not(.btn):hover::after {
   width: 100%;
 }
 
-nav ul li a:hover {
+nav ul li a:not(.btn):hover {
   color: var(--primary-color);
+}
+
+nav ul li a.primary-btn.nav-button-size:hover {
+  color: var(--light-text);
+}
+
+nav ul li a.secondary-btn.nav-button-size:hover {
+  color: var(--light-text);
 }
 
 /* Hero Section */
