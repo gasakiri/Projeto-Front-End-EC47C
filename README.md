@@ -44,7 +44,7 @@ O objetivo principal desta etapa do projeto é aplicar os conhecimentos de HTML5
     -   Formulário com 6 campos: Nome Completo, E-mail, Senha, Confirmar Senha, Principal Área de Interesse (dropdown) e aceite dos Termos de Serviço (checkbox).
     -   Redirecionamento para a página de Login após o envio.
     -   Layout com painel informativo lateral e painel de formulário centralizado.
--   **Página de Login (`login.html`):**
+-   **Página de Login (`Login.html`):**
     -   Formulário com campos para E-mail e Senha.
     -   Link para "Esqueceu sua senha?" e para a página de Cadastro.
     -   Redirecionamento para a Página Principal após o envio.
@@ -56,7 +56,7 @@ O objetivo principal desta etapa do projeto é aplicar os conhecimentos de HTML5
 
 1.  `principal.html`: Página principal da plataforma Evolvere, apresentando a proposta de valor.
 2.  `Login.html`: Página para autenticação de usuários existentes.
-3.  `cadastro.html`: Página para registro de novos usuários.
+3.  `Cadastro.html`: Página para registro de novos usuários.
 
 ## 🛠️ Tecnologias Utilizadas
 
