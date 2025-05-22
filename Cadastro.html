@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua Conta - Evolvere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link type="text/css" rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <div class="main-container">
+        <aside class="info-panel">
+            <div class="info-content">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                        <polyline points="5 12 12 5 19 12"></polyline>
+                    </svg>
+                    <h1>Evolvere</h1>
+                </div>
+                <p class="slogan">Desenvolva seu <span class="highlight">potencial</span>. Transforme seu <span class="highlight">futuro</span>.</p>
+                <ul class="features">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Ferramentas para seu progresso.</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Conteúdo que impulsiona.</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Uma jornada de evolução contínua.</li>
+                </ul>
+                <p class="ods-focus">Compromisso com a ODS 4: Educação de Qualidade para todos.</p>
+            </div>
+            <div class="decorative-shape"></div>
+        </aside>
+
+        <main class="form-panel">
+            <div class="form-container">
+                <h2>Crie sua Conta em Evolvere</h2>
+                <p class="subtitle">Comece sua jornada de desenvolvimento hoje mesmo!</p>
+
+                <form action="login.html" method="POST" id="formCadastro">
+                    <div class="form-group">
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder=" " required>
+                        <label for="nomeCompleto">Nome Completo</label>
+                        <div class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                        <label for="email">E-mail</label>
+                        <div class="input-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5l-8-5V6l8 5l8-5v2z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="password" id="senha" name="senha" placeholder=" " required minlength="8">
+                            <label for="senha">Senha</label>
+                             <div class="input-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder=" " required minlength="8">
+                            <label for="confirmarSenha">Confirmar Senha</label>
+                            <div class="input-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="areaInteresse" name="areaInteresse" required>
+                            <option value="" disabled selected hidden label="Selecione uma área"></option>
+                            <option value="matematica">Matemática</option>
+                            <option value="ciencias">Ciências</option>
+                            <option value="linguagens">Linguagens e Códigos</option>
+                            <option value="humanas">Ciências Humanas</option>
+                            <option value="tecnologia">Tecnologia e Programação</option>
+                            <option value="artes">Artes</option>
+                            <option value="desenvolvimento_pessoal">Desenvolvimento Pessoal</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                        <label for="areaInteresse">Principal Área de Interesse</label>
+                        <div class="input-icon select-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M7 10l5 5l5-5z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="form-group terms">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Li e concordo com os <a href="#termos" target="_blank">Termos de Serviço</a> e <a href="#privacidade" target="_blank">Política de Privacidade</a>.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span>Evoluir Agora</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </form>
+
+                <p class="login-redirect">
+                    Já é membro? <a href="login.html">Entre na sua conta</a>
+                </p>
+            </div>
+             <footer class="form-footer">
+                <p>© 2025 Evolvere. Todos os direitos reservados.</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
