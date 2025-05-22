@@ -44,19 +44,19 @@ O objetivo principal desta etapa do projeto é aplicar os conhecimentos de HTML5
     -   Formulário com 6 campos: Nome Completo, E-mail, Senha, Confirmar Senha, Principal Área de Interesse (dropdown) e aceite dos Termos de Serviço (checkbox).
     -   Redirecionamento para a página de Login após o envio.
     -   Layout com painel informativo lateral e painel de formulário centralizado.
--   **Página de Login (`Login.html`):**
+-   **Página de Login (`login.html`):**
     -   Formulário com campos para E-mail e Senha.
     -   Link para "Esqueceu sua senha?" e para a página de Cadastro.
     -   Redirecionamento para a Página Principal após o envio.
     -   Layout similar ao de cadastro, com painel informativo e painel de formulário.
 -   **Alinhamento com ODS:** Foco explícito no ODS 4 - Educação de Qualidade, destacado em todas as páginas.
--   **Estrutura Semântica:** Utilização de tags HTML5 semânticas (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<aside>`, etc.) para melhor organização e acessibilidade.
+-   **Estrutura Semântica:** Utilização de tags HTML5 semânticas (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<aside>`, etc.) para melhor organização, acessibilidade e SEO.
 
 ## 📄 Páginas Desenvolvidas
 
 1.  `principal.html`: Página principal da plataforma Evolvere, apresentando a proposta de valor.
 2.  `Login.html`: Página para autenticação de usuários existentes.
-3.  `Cadastro.html`: Página para registro de novos usuários.
+3.  `cadastro.html`: Página para registro de novos usuários.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -85,7 +85,7 @@ O objetivo principal desta etapa do projeto é aplicar os conhecimentos de HTML5
 ## 🌐 Demonstração (GitHub Pages)
 
 Acesse a demonstração ao vivo do projeto através do link:
-[]()
+[https://gasakiri.github.io/Projeto-Front-End-EC47C/](https://gasakiri.github.io/Projeto-Front-End-EC47C/)
 
 ## 👥 Integrantes
 
