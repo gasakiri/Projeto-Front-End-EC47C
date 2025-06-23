@@ -22,6 +22,10 @@ function addUser(userName = '', email = '', pw = '') {
     localStorage.setItem('evolvereUsers', JSON.stringify(evolvereUsers));
 }
 
+function deleteAllUsers() {
+    localStorage.clear();
+}
+
 function getUsers() {
     var storedList = JSON.parse(localStorage.getItem('evolvereUsers'));
     evolvereUsers = storedList || [];
