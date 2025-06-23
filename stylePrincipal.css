@@ -220,29 +220,8 @@ nav ul li a.secondary-btn.nav-button-size:hover {
 /* Hero Section */
 .hero {
   padding: 120px 0 80px;
-
   position: relative;
   overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  left: -100px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
 }
 
 .hero .container {
@@ -763,19 +742,6 @@ nav ul li a.secondary-btn.nav-button-size:hover {
   background: linear-gradient(135deg, var(--primary-color), #1565c0);
   color: var(--light-text);
   text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -50px;
-  width: 200px;
-  height: 200px;
-
-  border-radius: 50%;
 }
 
 .cta h2 {
@@ -810,7 +776,6 @@ footer {
   background-color: var(--dark-bg);
   color: var(--light-text);
   padding: 80px 0 20px;
-  position: relative;
 }
 
 .footer-content {
@@ -967,4 +932,17 @@ footer .dev img {
 
 footer .dev a:hover img {
   transform: scale(1.1);
+}
+
+/* Estilos para o botão Admin na navegação */
+.btn-admin-nav {
+  background: var(--secondary-color);
+  color: var(--light-text);
+}
+
+.btn-admin-nav:hover {
+  background: #a0520b;
+  color: var(--light-text);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(206, 107, 14, 0.3);
 }
