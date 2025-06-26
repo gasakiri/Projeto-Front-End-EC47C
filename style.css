@@ -5,7 +5,7 @@
 /* === CSS Variables === */
 :root {
   --primary-color: #2196f3;
-  --secondary-color: #1bc047;
+  --secondary-color: #1bc047; /* Verde para páginas de auth */
   --accent-color: #fbbc05;
   --error-color: #ea4335;
 
@@ -13,9 +13,9 @@
   --text-medium: #5f6368;
   --text-light: #ffffff;
 
-  --bg-main: #f8f9fa; /* Fundo principal do site (usado no body de principal.html) */
-  --bg-auth-page: #eef2f7; /* Fundo para as páginas de login/cadastro */
-  --bg-panel: #ffffff; /* Fundo para painéis/cards */
+  --bg-main: #f8f9fa;
+  --bg-auth-page: #eef2f7;
+  --bg-panel: #ffffff;
 
   --border-color: #dadce0;
   --border-focus-color: var(--primary-color);
@@ -435,7 +435,7 @@ body.auth-page {
   overflow: hidden;
 }
 .btn-delete:hover {
-  background-color: #2a65c9;
+  background-color: #c5372b;
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
@@ -568,27 +568,175 @@ body.auth-page {
     font-size: 0.95em;
   }
 }
+
+/* === CORREÇÃO DA NAVBAR E ESTILOS PARA O PAINEL ADMIN === */
+
+/*
+ * FIX: Corrige a cor do botão Admin na navbar.
+ * O problema é que style.css redefine a variável --secondary-color para verde.
+ * Esta regra força a cor laranja (#ce6b0e) do stylePrincipal.css no botão.
+*/
+header .btn-admin-nav {
+  background: #ce6b0e; /* Cor laranja do site principal */
+  color: var(--light-text) !important; /* Garante o texto branco */
+}
+header .btn-admin-nav:hover {
+  background: #a0520b; /* Laranja mais escuro para o hover */
+}
+
+/* Define o layout principal da página de dashboard */
+.admin-dashboard {
+  padding-top: 120px; /* Espaço para o header fixo */
+  padding-bottom: 80px;
+  background-color: var(--bg-auth-page); /* Fundo suave, consistente */
+  min-height: 100vh;
+}
+
+/* Título principal da página Admin */
+.admin-dashboard .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* Grid para organizar os painéis */
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Painel da lista é maior */
+  gap: 30px;
+  align-items: start;
+}
+
+/* Estilo base para os painéis brancos */
+.admin-panel {
+  background-color: var(--bg-panel);
+  padding: 30px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.admin-panel h2 {
+  font-family: var(--font-primary);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Container dos botões do formulário */
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Botões um abaixo do outro */
+  gap: 15px;
+}
+
+/* Botão de limpar campos */
+.form-actions .btn-clear {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #78909c;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  background-color: transparent;
+  color: #78909c;
+  font-weight: 600;
+  font-size: 0.95em;
+  transition: all 0.2s ease;
+}
+
+.form-actions .btn-clear:hover {
+  background-color: #78909c;
+  color: white;
+}
+
+/* Controles de gerenciamento */
 .user-controls {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
-.user-controls input {
+.user-controls #searchInput {
   flex-grow: 1;
-  padding: 10px;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: 0.9em;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.user-controls #searchInput:focus {
+  outline: none;
+  border-color: var(--border-focus-color);
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+/* Lista de usuários */
+#user-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  max-height: 350px;
+  overflow-y: auto;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-md);
 }
-.user-controls .btn-clear,
-#user-list .btn-delete-item {
-  padding: 10px 15px;
-  border: none;
-  border-radius: var(--border-radius-md);
-  cursor: pointer;
-  background-color: #78909c;
-  color: white;
+#user-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+#user-list li:last-child {
+  border-bottom: none;
+}
+#user-list li:hover {
+  background-color: var(--bg-auth-page);
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user-details .user-name {
+  font-weight: 600;
+}
+.user-details .user-email {
+  font-size: 0.85em;
+  color: var(--text-medium);
 }
 #user-list .btn-delete-item {
-  background-color: #e57373;
-  margin-left: 15px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  background-color: var(--error-color);
+  color: white;
+  font-size: 0.8em;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+#user-list .btn-delete-item:hover {
+  background-color: #c5372b;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE PARA O PAINEL ADMIN */
+@media (max-width: 992px) {
+  .admin-grid {
+    grid-template-columns: 1fr; /* Coluna única */
+  }
+}
+@media (max-width: 576px) {
+  .admin-dashboard {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .admin-dashboard .section-title {
+    font-size: 1.8rem;
+  }
+  .admin-panel {
+    padding: 20px;
+  }
 }
