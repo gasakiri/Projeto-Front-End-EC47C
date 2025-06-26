@@ -9,6 +9,21 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+O Projeto 2 estende a plataforma web Evolvere com a inclusão da página `Admin.html`, voltada à administração de usuários, como sua criação, exclusão e pesquisa, utilizando JavaScript para manipulação dinâmica de dados.
+
+## ✨ Funcionalidades
+
+-   **Página Principal (`principal.html`):**
+    -   Adcionado botão para acesso à `Admin.html`.
+
+-   **Página de Administração (`Admin.html`):**
+    -   Formulário para criação de novos usuários, com Nome de Usuário e E-mail.
+    -   Capacidade de limpar campos para o cadastro de usuários.
+    -   Armazenamento de dados no Local Storage do navegador.
+    -   Pesquisa de usuários
+    -   Exclusão individual de usuário ou de todos usuários cadastrados.
+
+
 ---
 # Evolvere - Plataforma Educacional (Projeto 1)
 
